@@ -1,0 +1,72 @@
+# Git files
+.git
+.gitignore
+.gitattributes
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+*.cover
+.hypothesis/
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+.eggs/
+
+# Logs
+*.log
+logs/
+
+# Environment files
+.env
+.env.local
+
+# Documentation
+docs/_build/
+
+# Docker files (don't need these in the image)
+Dockerfile*
+docker-compose*.yml
+.dockerignore
+
+# CI/CD
+.github/
+.gitlab-ci.yml
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Node modules if using JavaScript/TypeScript
+node_modules/
+npm-debug.log*
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3

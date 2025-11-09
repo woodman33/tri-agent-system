@@ -1,0 +1,54 @@
+services:
+  # Main tri-agent system service
+  tri-agent:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: tri-agent-system
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./:/app
+      - /app/__pycache__
+    environment:
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped
+    networks:
+      - tri-agent-network
+
+  # Redis service for agent communication and state management
+  redis:
+    image: redis:7-alpine
+    container_name: tri-agent-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+    restart: unless-stopped
+    networks:
+      - tri-agent-network
+    command: redis-server --appendonly yes
+
+  # PostgreSQL database for persistent storage
+  postgres:
+    image: postgres:15-alpine
+    container_name: tri-agent-postgres
+    environment:
+      - POSTGRES_USER=triagent
+      - POSTGRES_PASSWORD=triagent
+      - POSTGRES_DB=triagent
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    restart: unless-stopped
+    networks:
+      - tri-agent-network
+
+networks:
+  tri-agent-network:
+    driver: bridge
+
+volumes:
+  redis-data:
+  postgres-data:

@@ -1,0 +1,37 @@
+{
+  "created_at": "2025-11-09T01:12:58.462456",
+  "workspace_id": "demo_dual_layer_layer1",
+  "conversation_history": [
+    {
+      "timestamp": "2025-11-09T01:12:58.463194",
+      "agent_id": "agent1_coder",
+      "role": "system",
+      "content": "Starting task: Fix typo in README"
+    },
+    {
+      "timestamp": "2025-11-09T01:12:58.463686",
+      "agent_id": "agent1_coder",
+      "role": "system",
+      "content": "Starting task: Build microservices architecture"
+    }
+  ],
+  "decisions": [],
+  "bugs_encountered": [],
+  "solutions": [],
+  "agent_states": {
+    "agent1_coder": {
+      "status": "coding",
+      "current_task": "Build microservices architecture",
+      "updated_at": "2025-11-09T01:12:58.463416"
+    },
+    "agent2_improver": {
+      "status": "idle",
+      "current_task": null
+    },
+    "agent3_doctor": {
+      "status": "idle",
+      "current_task": null
+    }
+  },
+  "spawned_agents": []
+}

@@ -1,0 +1,19 @@
+{
+  "team_id": "team_ddfceee2",
+  "parent_workspace": "demo_workspace",
+  "workspace": "demo_workspace_team_ddfceee2",
+  "task": "Build user service",
+  "spawned_at": "2025-11-09T01:02:12.283807",
+  "spawned_by": "agent1_coder",
+  "agents": {
+    "agent1_coder": {
+      "status": "active"
+    },
+    "agent2_improver": {
+      "status": "monitoring"
+    },
+    "agent3_doctor": {
+      "status": "standby"
+    }
+  }
+}

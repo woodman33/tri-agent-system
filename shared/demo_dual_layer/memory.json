@@ -1,0 +1,23 @@
+{
+  "created_at": "2025-11-09T01:12:58.462859",
+  "workspace_id": "demo_dual_layer",
+  "conversation_history": [],
+  "decisions": [],
+  "bugs_encountered": [],
+  "solutions": [],
+  "agent_states": {
+    "agent1_coder": {
+      "status": "idle",
+      "current_task": null
+    },
+    "agent2_improver": {
+      "status": "idle",
+      "current_task": null
+    },
+    "agent3_doctor": {
+      "status": "idle",
+      "current_task": null
+    }
+  },
+  "spawned_agents": []
+}

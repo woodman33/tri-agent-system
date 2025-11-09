@@ -1,0 +1,19 @@
+{
+  "team_id": "team_c6d4da86",
+  "parent_workspace": "demo_workspace",
+  "workspace": "demo_workspace_team_c6d4da86",
+  "task": "Build auth service",
+  "spawned_at": "2025-11-09T01:02:12.283571",
+  "spawned_by": "agent1_coder",
+  "agents": {
+    "agent1_coder": {
+      "status": "active"
+    },
+    "agent2_improver": {
+      "status": "monitoring"
+    },
+    "agent3_doctor": {
+      "status": "standby"
+    }
+  }
+}

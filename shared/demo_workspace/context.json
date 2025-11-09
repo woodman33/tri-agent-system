@@ -1,0 +1,23 @@
+{
+  "user_input": [
+    {
+      "timestamp": "2025-11-09T01:02:12.281779",
+      "content": "The README has a typo in line 42"
+    },
+    {
+      "timestamp": "2025-11-09T01:02:12.284223",
+      "content": "We need a scalable microservices setup"
+    }
+  ],
+  "user_docs": [
+    {
+      "timestamp": "2025-11-09T01:02:12.281846",
+      "content": "Follow the style guide"
+    },
+    {
+      "timestamp": "2025-11-09T01:02:12.284561",
+      "content": "Follow 12-factor app principles"
+    }
+  ],
+  "codebase_context": []
+}

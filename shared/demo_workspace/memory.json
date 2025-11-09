@@ -1,0 +1,74 @@
+{
+  "created_at": "2025-11-09T01:02:12.281295",
+  "workspace_id": "demo_workspace",
+  "conversation_history": [
+    {
+      "timestamp": "2025-11-09T01:02:12.281695",
+      "agent_id": "agent1_coder",
+      "role": "system",
+      "content": "Starting task: Fix typo in README"
+    },
+    {
+      "timestamp": "2025-11-09T01:02:12.284130",
+      "agent_id": "agent1_coder",
+      "role": "system",
+      "content": "Starting task: Build complete microservices architecture"
+    }
+  ],
+  "decisions": [
+    {
+      "timestamp": "2025-11-09T01:02:12.282269",
+      "agent_id": "agent3_doctor",
+      "decision": "Decision: Both agents have valid points. Proceeding with Agent 1's approach but incorporating Agent 2's safety checks.",
+      "reasoning": "Agent 1's approach is more aligned with user requirements, but Agent 2's caution about edge cases is warranted."
+    }
+  ],
+  "bugs_encountered": [],
+  "solutions": [
+    {
+      "timestamp": "2025-11-09T01:02:12.282158",
+      "agent_id": "agent2_improver",
+      "bug_id": 0,
+      "solution": "Debug solution for bug #0: Check input validation and edge cases"
+    }
+  ],
+  "agent_states": {
+    "agent1_coder": {
+      "status": "coding",
+      "current_task": "Build complete microservices architecture",
+      "updated_at": "2025-11-09T01:02:12.284035"
+    },
+    "agent2_improver": {
+      "status": "monitoring",
+      "current_task": null,
+      "updated_at": "2025-11-09T01:02:12.283060"
+    },
+    "agent3_doctor": {
+      "status": "idle",
+      "current_task": null
+    }
+  },
+  "spawned_agents": [
+    {
+      "timestamp": "2025-11-09T01:02:12.283194",
+      "parent_id": "agent1_coder",
+      "spawned_id": "team_b9eca82d",
+      "task": "Design API gateway",
+      "status": "active"
+    },
+    {
+      "timestamp": "2025-11-09T01:02:12.283458",
+      "parent_id": "agent1_coder",
+      "spawned_id": "team_c6d4da86",
+      "task": "Build auth service",
+      "status": "active"
+    },
+    {
+      "timestamp": "2025-11-09T01:02:12.283693",
+      "parent_id": "agent1_coder",
+      "spawned_id": "team_ddfceee2",
+      "task": "Build user service",
+      "status": "active"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "user_input": [
+    {
+      "timestamp": "2025-11-09T01:12:58.463287",
+      "content": "Line 42 has a typo"
+    },
+    {
+      "timestamp": "2025-11-09T01:12:58.463806",
+      "content": "Need scalable microservices"
+    }
+  ],
+  "user_docs": [],
+  "codebase_context": []
+}
